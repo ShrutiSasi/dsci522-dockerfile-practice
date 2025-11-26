@@ -1,0 +1,11 @@
+name: dsci552_docker
+channels:
+  - conda-forge
+  - defaults  
+dependencies:  
+  - python=3.11.*
+  - jupyterlab=4.0
+  - pandas=2.2
+  - numpy=1.26
+  - matplotlib=3.10
+  - altair=5.5
