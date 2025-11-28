@@ -3,18 +3,12 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: dsci552_dockerfile_practice
-    container_name: dsci552-notebook
+    image: dockerlock
+    container_name: dockerlock
     ports:
       - "8888:8888"
     volumes:
       - ./:/workspace
     working_dir: /workspace
-    environment:
-      - JUPYTER_ENABLE_LAB=yes
-    command: >
-      bash -c "source /opt/conda/bin/activate docker_practice_env &&
-               jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root"
     stdin_open: true
     tty: true
-    restart: unless-stopped
