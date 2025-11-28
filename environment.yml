@@ -1,7 +1,6 @@
 name: dsci552_docker
 channels:
-  - conda-forge
-  - defaults  
+  - conda-forge 
 dependencies:  
   - python=3.11.*
   - jupyterlab=4.0
